@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { NgxQrcodeElementTypes, NgxQrcodeErrorCorrectionLevels } from '@techiediaries/ngx-qrcode';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,8 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'qrcode-generator';
+  elementType = NgxQrcodeElementTypes.CANVAS;
+  correctionLevel = NgxQrcodeErrorCorrectionLevels.HIGH;
+  value = 'https://www.arundhaj.com/';
+
 }
